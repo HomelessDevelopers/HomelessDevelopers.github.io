@@ -1,0 +1,17 @@
+section.contact-form
+	.form-container
+		.form-container-inner
+			.wrapper
+				.row.container-fluid.container-fluid.container-fluid
+					.col-md-6.mobile-disable
+					.col-xs-12.col-sm-12.col-md-12.col-lg-6
+						h2.font-2.upper-case Закажите продукт сейчас !
+						form(action="" method = "POST")
+							input(type="text" name = "city" , placeholder="Город")
+							input( type="text" name = "full-name" , placeholder = "Имя , Фамилия" )
+							input(type="input" name = "phone" placeholder ="Телефон")
+							input(type="text" name = "email" , placeholder="Электронный Адрес")
+							
+							textarea(name="comment" placeholder="Комментарий")
+							button(type="submit").button.button-ripple.button-blue.upper-case.font-1 Заказать сейчас
+		

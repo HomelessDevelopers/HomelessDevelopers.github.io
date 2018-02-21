@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width , initial-scale=1")
+		link(rel="stylesheet", href="source/css/libs/normalize.css")
+		link(rel="stylesheet", href="source/fonts/font-awesome/on-server/css/fontawesome-all.min.css")
+		link(rel="stylesheet", href="source/css/libs/bootstrap-reboot.css")
+		link(rel="stylesheet", href="source/css/libs/animate.css")
+		link(rel="stylesheet", href="source/css/libs/bootstrap-grid.min.css")
+		link(rel="stylesheet", href="source/css/main.css")
+		title Название
+	body
+		//---------- Header layout -----------//
+		include source/pug/layout/header.pug
+		include source/pug/layout/fit-slider.pug
+		//---------- Features-Section layout layout -----------//
+		include source/pug/layout/features-section.pug
+		include source/pug/layout/how-it-works.pug
+		include source/pug/layout/feed.pug
+		include source/pug/layout/product-features.pug
+		//---------- Footer layout -----------//
+		include source/pug/layout/footer.pug
+
+	
+	script(type="text/javascript" , src = "source/js/libs/jquery-3.2.1.min.js")
+	//script(type="text/javascript" , src = "source/js/libs/...")
+	script(type="text/javascript" , src = "source/js/main.js")

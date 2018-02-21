@@ -1,0 +1,127 @@
+@import "libs/_vars.scss";
+@import "libs/_functions.scss";
+@import "libs/_mixins.scss";
+@import "layout/_header.scss";
+//@import "layout/_header_2.scss";
+
+@import "layout/_fit-slider.scss";
+@import "layout/_how-it-works.scss";
+@import "layout/_features-section.scss";
+@import "layout/_feed.scss";
+@import "layout/_product-features.scss";
+@import "layout/_portoflio-section.scss";
+@import "layout/_feedback.scss";
+@import "layout/_pricing.scss";
+@import "layout/_contact-form.scss";
+@import "layout/_footer.scss";
+@import "components/_fonts.scss";
+@import "components/_buttons.scss";
+
+body{
+	background-color: _palette(bg);
+	font-family: _fonts(font3) , sans-serif;
+	color: _palette(fc);
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	color: _palette(fc);
+	&:hover{
+		color: _palette(fc);
+		text-decoration: none;
+	}
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section{
+	padding: 20px 0px;
+	min-height: 1px;
+}
+ section.no-padding {
+ 	padding: 0px;
+
+ }
+.text-center{ text-align: center;}
+.text-right	{text-align: right}
+.text-left {text-align: left;}
+
+.float-left{ float: left}
+.float-right {float: right} 
+
+.no-padding{ padding: 0px !important}
+
+
+.wrapper{
+	width: _size(wrapper);
+	max-width : 1200px;
+	height: auto;
+	margin: auto;
+}
+
+.color-1{ color : _palette(color1)}
+.color-2{ color : _palette(color1)}
+.color-3{ color : _palette(color3)}
+.color-4{ color : _palette(color4)}
+.color-5{ color : _palette(color1)}
+.color-6{ color : _palette(color1)}
+
+
+/*ADAPTIVITY STYLES*/
+
+
+@include Phone {
+	*{
+		background-position: center;
+	}
+	.wrapper{
+		width: 100%;
+		margin: auto;
+		
+	}
+
+	.container-fluid{
+		margin: 0px;
+	}
+
+	.portfolio-slider{
+		height: 200px !important;
+		overflow: hidden;
+	}
+}
+@include SmallTablet {
+	.wrapper{
+		width: 100%;
+		margin: auto;
+		
+	}
+	.portfolio-slider{
+		height: 200px !important;
+		overflow: hidden;
+	}
+
+}
+
+
+
+
+//REMOVE LATER
+
+
+
+
+
+
+
+
+
+
+
+.document-overlay{
+	width: 100%;
+	position: absolute;
+}

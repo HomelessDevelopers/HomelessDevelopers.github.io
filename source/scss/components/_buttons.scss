@@ -1,0 +1,30 @@
+// DEFAULT 
+
+.button{
+	border: 1px solid _palette(fc);
+	padding: 8px 12px 8px 12px;
+	border-radius: 5px;
+	background-color: transparent;
+	font-family: _fonts(font1);
+}
+
+.button.button-white{
+	background-color: _palette(white);
+	border : none;
+	color: _palette(color1);
+	&:hover{
+		color: _palette(white);
+		background-color: _palette(color1);
+	}
+}
+.button-blue{
+	background-color: _palette(color1);
+	border: none;
+	color: _palette(white);
+
+	&:hover{
+		background-color: _palette(white);
+		color: _palette(color1)
+	}
+}
+

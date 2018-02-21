@@ -1,0 +1,90 @@
+
+.feed{
+	.upper-section{
+		background-color: transparent;
+		.feed-intro{
+
+				padding: 120px 0px 120px 0px;
+				margin-bottom: 30px;
+
+					.feedback-media-icon{
+						font-size: 3em;
+						color: _palette(color2);
+						margin: auto;
+						width: 100%;
+						height: auto;
+						margin: auto;
+			  }
+		}
+	}
+
+	.lower-section{
+		.no-padding{
+			.col-md-3{
+				padding: 0px !important;
+			}
+		}
+		
+		.feedback-item{
+			color: #fff;
+			width: 100%;
+			max-height: 350px;
+			/*Change to fitable*/
+			position: relative;
+			overflow: hidden;
+
+			&:hover{
+				.feedback-overlay{
+					top: 0%;
+				
+				}
+			}
+		}
+		.feedback-overlay{
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			background-color: _palette(bg-alt);
+			position: absolute;
+			transition: all 0.4s ease-in-out;
+			top: 100%;
+
+
+
+			.feedback-overlay-inner{
+				width: 100%;
+				height: 100%;
+				display: table;
+				vertical-align: middle;
+
+				.feedback-content{
+					display: table-cell;
+					height: 100%;
+					width: 100%;
+					vertical-align: middle;
+				}
+			}
+			.feedback-title{
+				font-family: "lobster";
+			}
+			.feedback-tags{
+
+				a{
+					padding: 0px 2px 0px 2px;
+					color: _palette(white);
+						&:hover{
+							color: _palette(color1);
+						}
+				}
+				
+			}
+		}
+	}
+
+
+}
+
+
+//---TRANSFER LATER----///
+
+

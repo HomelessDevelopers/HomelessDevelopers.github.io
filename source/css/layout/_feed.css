@@ -1,0 +1,10 @@
+.feed .upper-section {
+  background-color: transparent; }
+  .feed .upper-section .feed-intro {
+    padding: 20px 0px 20px 0px; }
+    .feed .upper-section .feed-intro .feedback-media-icon {
+      display: none;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      margin: auto; }

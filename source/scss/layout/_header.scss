@@ -1,0 +1,251 @@
+header{
+	position: relative;
+	z-index: 999;
+	height: auto;
+	width: 100%;
+
+	i{
+		font-size: 1.3em;
+		padding-right: 1px;
+	}
+	
+	ul{
+
+
+		padding: 0px;
+		margin: 0px;
+
+		li{
+			list-style-type: none;
+			display: inline-block;
+		}
+
+
+	}
+
+	.navigation{
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		height: auto;
+		background-color: _palette(bg-tp);
+
+		.top-nav{
+			height: 50px;
+			width: 100%;
+			line-height: 50px;
+
+			.col-md-4 , .col-md-12,.col-md-6,.col-md-3,.col-md-8,.col-md-9{
+				padding: 0px !important;
+				text-align: center;
+				.logo-container{
+					text-align: left;
+					padding-left: 15px;
+				}
+			}
+
+			.contact-container{
+				width: 100%;
+				height: auto;
+				position: relative;
+				
+					&:hover{
+						.contact-text{
+							display: block;
+							transition: all 0.4s;
+						}	
+				}
+				
+						
+				
+				
+				.contact-text{
+					padding-left: 10px;	
+					font-family: "Montserrat";
+					font-weight: 500;
+					letter-spacing: 1px;
+					font-size: 0.9em;
+					line-height: 10px;
+					display: block;
+					position: absolute;
+					left: 50%;
+					transform: translate(-50%);
+					background-color: _palette(white);
+					width: 80%;
+					padding: 15px 0px;
+					@include border-radius(30px);
+					@include box-shadow(0, 0 , 15px , rgba( 0  , 0 , 0 , 0.3))
+					z-index: 999;
+					display: none;
+					transition: all , 0.4s;
+					
+					
+
+					&::before{
+						content: " ";
+						border-color: transparent transparent _palette(white) transparent;
+						border-width: 15px;
+						border-style: solid;
+						position: absolute;
+						top: -20px;
+						left: 50%;
+						transform: translate(-50%);
+					}
+				}
+
+				
+
+			}
+
+			.social-nav{
+				a{
+					padding: 0px 15px 0px 15px;
+
+					&:last-child{
+						padding-right: 0px;
+					}
+					&:hover{
+						color: _palette(color1);
+					}
+				}
+			}
+		}
+
+		.bottom-nav{
+			border-top: 1px solid _palette(bg-border);
+			padding: 15px 0px 15px 0px;
+		
+			button.button.button-white{
+				letter-spacing: 2.4px;
+				font-weight: 500;
+			}
+
+
+			.main-nav{
+				a{
+					padding: 0px 15px 0px 15px;
+					font-weight: 550;
+					line-height: 40px;
+
+					&:first-child{
+						padding-left: 0px;
+					}
+					&:hover{
+						color: _palette(color1);
+					}
+				}
+				.current{
+					color: _palette(color1)
+				}
+			}
+		}
+	}
+
+	.mobile-nav-header{
+		width: 100%;
+		height: auto;
+		background-color: _palette(bg-tp);
+		position: fixed;
+		color: _palette(grey);
+		display: none;
+		
+
+		&:hover{
+			background-color: _palette(white);
+			color: _palette(fc);
+			box-shadow: 0 0 120px rgba(0,0,0,0.3);
+
+			button.button-white{
+				background-color: _palette(color1);
+				color: _palette(white);
+
+			}
+		}
+		
+		.mobile-navigation-triger-container{
+			padding: 10px 0px;
+			cursor: pointer;
+		}
+		.mobile-navigation-triger{
+			
+			float: right;
+			font-size: 1.9em;
+			padding-left: 100px;
+			i{
+				padding-top: 1px;
+			}
+		}
+		.site-logo{
+			color: _palette(fc);
+			padding-top: 6px;
+		}
+	}
+
+	.mobile-navigation-container{
+		position: relative;
+		height: 100%;
+		width: 100%;
+		background-color: _palette(bg-alt);
+		z-index: 900;
+		position: fixed;
+		opacity: 1;
+
+		display: none;
+
+		.mobile-nav{
+
+
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+
+			li{
+				display: block;
+				
+				margin: auto;
+				margin: 10px 0px;
+
+				
+				a{
+					color: _palette(white);
+					text-align: center;
+					border: 1px solid _palette(white);
+					padding: 10px;
+					display: inline-block;
+					width: 100%;
+
+					&:hover{
+						//background-color: _palette(white);
+						color: _palette(color1);
+						border-color: _palette(color1);
+					}
+
+				}
+			}
+			.button-white{
+				width: 100%;
+				border-radius: 0px;
+			}
+		}
+	}
+}
+
+@include Phone {
+	header{
+		.navigation{
+			display: none;
+		}
+
+		.mobile-nav-header{
+			display: block;
+			button.button.button-white{
+				display: none;
+			}
+		}
+	}
+	.contact-text{
+		display: none;
+	}
+}
+

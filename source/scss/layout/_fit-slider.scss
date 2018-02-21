@@ -1,0 +1,52 @@
+.hero-slider{
+	display: table;
+	height: 100%;
+	width: 100%;
+
+	.inner-section{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.hero-slider{
+	width: 100%;
+	height: 100%;
+	}
+
+	#fit-slider-images{
+		height: 100%;
+		width: 100%;
+		
+
+		.fit-slider-image{
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			z-index: -999;
+			display: none;
+
+		}
+		.fit-slider-image.current{
+			display: block;
+		}
+	}
+
+	.fit-slider-wrapper{
+		.fit-slider{
+			position: relative;
+			.fit-slide{
+				display: none;
+				position: absolute;
+				.image{
+					display: none !important;
+				}
+				display: none;
+			}
+			.fit-slide.current{
+				display: block;
+			}
+		}
+	}
+
+}

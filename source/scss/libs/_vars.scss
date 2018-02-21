@@ -1,0 +1,64 @@
+$fonts : (
+	basefont : 16px ,
+	// h1 : 2em ,
+	// h2 : 1.66666666667em ,
+	// h3 : 1.33333333334 , 
+	// h4 : 1.00000000001em ,
+	// h5 : 0.66666666668em , 
+	// h6 : 0.33333333333em ,
+
+	headline-padding : 15px,
+	paragraph-padding : 15px,
+
+	font1 : "Lobster" ,
+	font2 : "Poiret One" ,
+	font3 : "Comfortaa" ,
+	font4 : "Marck Script" ,
+	font5 : "Montserrat" ,
+	font6 : "Roboto Condensed" ,
+	font7 : "Open Sans" ,
+	font8 : "Roboto" ,
+	font9 : "Oswald" ,
+	font10 : "Open Sans Codensed" ,
+	font11 : "Merrierweather" ,
+	font12  : "Lora" ,
+	font13  : "Cormorant Garamond" ,
+	font14  : "EB Garamond" ,
+	font15  : "Montserrat" ,
+
+
+
+);
+
+
+$size : (
+	wrapper : 65%,
+);
+
+$palette : (
+	white : #fff,
+	white-alt : #fbfafa,
+	white-alt-2 : #f7fafb,
+	grey: #b5b9bb , 
+	bg : #f7fafb,
+	bg-tp : rgba(255,255,255,0.1) ,
+	bg-border: rgba(255,255,255,0.4),
+	bg-alt : rgba(0,0,0 , 0.4) ,
+	fc :  #243238 ,
+	color1 :  rgb(110,182,197),
+	color1-tp :  rgba(110,182,197, 0.5),
+	color2 : #91c3d4,
+	footer : #5d5f64,
+	footer2 : #595a5f, 
+
+);
+
+
+
+$BreakPoints : (
+	xs : 576px	,
+	sm : 576px	,
+	md : 768px	,
+	lg : 992px	,
+	xl : 1200px ,
+);

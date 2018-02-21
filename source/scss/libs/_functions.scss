@@ -1,0 +1,16 @@
+@function _size($key){
+	@return map-get($size , $key);
+}
+
+@function _palette($key){
+	@return map-get($palette , $key);
+}
+
+@function _fonts($key){
+	@return map-get($fonts , $key);
+}
+
+
+@function _BreakPoints($key){
+	@return map-get($BreakPoints , $key);
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Cormorant+Garamond|EB+Garamond|Lobster|Lora|Marck+Script|Merriweather|Montserrat|Open+Sans|Open+Sans+Condensed:300|Oswald|Poiret+One|Prosto+One|Roboto|Roboto+Condensed');
+
+
+h1{ font-size: _size(h1);}
+h2{ font-size: _size(h2);}
+h3{ font-size: _size(h3);}
+h4{ font-size: _size(h4);}
+h5{ font-size: _size(h5);}
+h6{ font-size: _size(h6);}
+
+h1,h2,h3,h4,h5,h6 {}
+
+
+
+p{ font-size: 1em; }
+
+a{ font-size: 0.9em; }
+
+.upper-case{ text-transform: uppercase; }
+.bold {font-weight: bold;}
+
+.font-1{ font-family: _fonts(font1) !important;}
+.font-2{ font-family: _fonts(font2) !important;}
+.font-3{ font-family: _fonts(font3) !important;}
+.font-4{ font-family: _fonts(font4) !important;}
+.font-5{ font-family: _fonts(font5) !important;}
+.font-6{ font-family: _fonts(font6) !important;}
+.font-7{ font-family: _fonts(font7) !important;}
+.font-8{ font-family: _fonts(font8) !important;}
+.font-9{ font-family: _fonts(font9) !important;}
+.font-10{ font-family: _fonts(font10) !important;}
+.font-11{ font-family: _fonts(font11) !important;}
+.font-12{ font-family: _fonts(font12) !important;}
+.font-13{ font-family: _fonts(font13) !important;}
+.font-14{ font-family: _fonts(font14) !important;}
+.font-15{ font-family: _fonts(font15) !important;}

@@ -1,0 +1,67 @@
+//Fonts mixin
+
+
+
+
+//Adaptivity media 
+@mixin Phone {
+	@media (max-width: _BreakPoints(xs)){
+		@content;
+	}
+}
+
+@mixin SmallTablet {
+	@media (min-width: _BreakPoints(sm)) and (max-width: _BreakPoints(md) ){
+		@content;
+	}
+}
+@mixin Tablet {
+  @media (min-width: _BreakPoints(md) ) and (max-width:  _BreakPoints(lg)  ) {
+    @content;
+  }
+}
+
+@mixin Desktop {
+  @media (min-width: _BreakPoints(lg) ) {
+    @content;
+  }
+}
+
+@mixin media-query($min-val , $max-val) {
+	@media (min-width: $min-val) and  (max-width: $max-val) {
+		@content;
+	}
+}
+@mixin max-media-query($max-val){
+	@media (max-width: #{$max-val + "px"}) {
+		@content;
+	}
+}
+
+
+
+
+
+
+@mixin border-radius ($val) {
+  -webkit-border-top-left-radius: $val;
+  -webkit-border-top-right-radius: $val;
+  -webkit-border-bottom-right-radius: $val;
+  -webkit-border-bottom-left-radius: $val;
+
+  -moz-border-radius-topleft: $val;
+  -moz-border-radius-topright: $val;
+  -moz-border-radius-bottomright: $val;
+  -moz-border-radius-bottomleft: $val;
+
+  border-top-left-radius: $val;
+  border-top-right-radius: $val;
+  border-bottom-right-radius: $val;
+  border-bottom-left-radius: $val;
+}
+
+@mixin box-shadow($x , $y , $blur , $color){
+	-moz-box-shadow:  $x  $y  $blur  $color;
+	-webkit-box-shadow: $x  $y  $blur  $color ;
+	box-shadow:  $x  $y  $blur  $color;
+}

@@ -1,0 +1,56 @@
+
+.features-section{
+	height: auto;
+	width: 100%;
+	background-image: url(https://as2.ftcdn.net/jpg/01/83/66/03/500_F_183660336_TFOyNnTeKdtXwbduz4sIyhjF3ZMsdfLx.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+
+
+	&:before{
+		content:" ";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 5;
+		top: 0px;
+		background-color: rgba(0,0,0,0.1);
+
+	}
+	.features-container{
+		position: relative;
+		z-index: 10;
+		text-align: center;
+		top: -140px;
+
+			.features-item{
+				background-color: _palette(white);
+				padding: 55px 20px 55px 20px;
+				&:nth-child(even){
+					background-color: _palette(white-alt);
+				}
+
+				.feature-image{
+					img{
+						border-radius: 50%;
+						width: 65%;
+					}
+					margin-bottom: 25px;
+				}
+				.feature-title{
+					font-weight: 100;
+					margin-bottom: 25px;
+					
+
+				}
+				.feature-text{
+					font-weight: 100;
+					font-size: 0.95em;
+					line-height: 22px;
+				}
+		}	
+	}
+		
+}
