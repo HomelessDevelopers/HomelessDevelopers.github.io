@@ -7,7 +7,11 @@ header {
   header .upper-section {
     padding-top: 0.8em; }
     header .upper-section .site-logo {
-      margin-top: -10px; }
+      margin-top: -10px;
+      width: 10%;
+      text-align: center;
+      margin: auto;
+      max-height: 50px; }
       header .upper-section .site-logo h1 {
         margin: 0px;
         padding: 0px; }
@@ -221,7 +225,7 @@ header {
 .features-section {
   height: auto;
   width: 100%;
-  background-image: url(https://as2.ftcdn.net/jpg/01/83/66/03/500_F_183660336_TFOyNnTeKdtXwbduz4sIyhjF3ZMsdfLx.jpg);
+  background-image: url("images/background-pic01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -315,6 +319,7 @@ header {
   background-image: url("../../images/bg-pic02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 825px;
   padding: 100px 0px 100px 0px;
@@ -356,8 +361,7 @@ header {
   min-height: 1px;
   padding: 10px 0px;
   background-image: url("../../images/bg-pic03.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
   position: relative; }
   .feedback .section-title {
     margin-bottom: 30px; }

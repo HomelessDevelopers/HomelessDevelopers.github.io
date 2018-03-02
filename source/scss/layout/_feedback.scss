@@ -3,8 +3,7 @@
 	min-height: 1px;
 	padding: 10px 0px;
 	background-image: url("../../images/bg-pic03.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: repeat;
 	position: relative;
 
 	.section-title{
@@ -37,7 +36,7 @@
 		button.slick-next.slick-arrow{
 			display: none !important;
 		}
-  
+
 
 		.feedback-slide{
 			padding: 50px 70px;
@@ -98,10 +97,10 @@
 					position: relative;
 
 					.user-inner-meta{
-						
+
 						width: 100%;
 						height: 100%;
-						
+
 
 
 					}
@@ -132,9 +131,9 @@
 					@include border-radius(50px);
 					position: relative;
 
-					
 
-					&:hover{	
+
+					&:hover{
 						button{
 							opacity: 1;
 							transition: all , 0.2s ;
@@ -183,26 +182,24 @@
 		width: 90%;
 		margin: auto;
 		.feedback-slider{
-		
+
 			.feedback-slide{
 				padding: 10px;
 				font-size: 0.8em;
-			
+
 			}
-		}		
+		}
 	}
 }
 @include SmallTablet {
 	.slider-wrapper{
 		.feedback-slider{
-		
+
 			.feedback-slide{
 				padding: 12px;
 				font-size: 0.8em;
-			
+
 			}
-		}		
-	}	
+		}
+	}
 }
-
-
