@@ -1,19 +1,56 @@
 header
 	.navigation
-		.wrapper
-			.row.container-fluid.container-fluid.container-fluid
-				.col-xs-12.col-sm-12.col-md-7.col-lg-7.no-padding
-					nav.main-nav.font-5
-						ul
-							li
-								a(href="#") Начало
-							li
-								a(href="#") О продукте
-							li
-								a(href="#") Сертифицирование
-							li
-								a(href="#") Свойства
-							li
-								a(href="#") Заказать
-							.clearfix
-						.clearfix
+		.upper-navigation
+			.wrapper
+				.container-fluid
+					.row
+						.col-xs-12.col-sm-3.col-md-3.no-padding
+							.site-logo.font-2
+								h1 
+									a( href = "index.html") LadySlims
+						.col-xs-12.col-sm-12.col-md-1.no-padding
+							.contact-container
+								.contact-icon
+									img(src="images/icons/svg/map.svg")
+								span.contact @mail+380955515561
+						.col-xs-12.col-sm-12.col-md-1.no-padding
+							.contact-container
+								.contact-icon
+									img(src="images/icons/svg/smartphone.svg")
+								span.contact @mail+380955515561
+						.col-xs-12.col-sm-12.col-md-1.no-padding
+							.contact-container
+								.contact-icon
+									img(src="images/icons/svg/gmail.svg")
+								span.contact @mail+380955515561
+						.col-xs-12.col-sm-12.col-md-6.col-lg-6
+							nav.social-nav.float-right
+								ul
+									- for(var i = 0; i < 4; i++)
+											li.social-nav-item
+												a(href="#")
+													img( src = "images/icons/svg/instagram.svg" , alt="instagram")
+								.clearfix
+								
+									
+		.lower-navigation
+			.wrapper
+				.fluid-container
+					.row
+						.col-xs-12.col-sm-12.col-md-8.col-lg-8
+							nav.main-nav.font-6
+								ul
+									li.ripple-animation
+										a(href="#") Главная
+									li.ripple-animation
+										a(href="#") О продукте
+									li.ripple-animation
+										a(href="#") Как работает
+									li.ripple-animation
+										a(href="#") Лента
+									li.ripple-animation
+										a(href="#") Портфолио
+									li.ripple-animation
+										a(href="#") Портфолио
+						.col-xs-12.col-sm-12.col-md-4.col-lg-4
+							button.button.button-white.float-right Заказать Сейчас

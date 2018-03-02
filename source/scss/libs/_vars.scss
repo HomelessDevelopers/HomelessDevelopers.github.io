@@ -1,10 +1,12 @@
+
+
 $fonts : (
 	basefont : 16px ,
 	// h1 : 2em ,
 	// h2 : 1.66666666667em ,
-	// h3 : 1.33333333334 , 
+	// h3 : 1.33333333334 ,
 	// h4 : 1.00000000001em ,
-	// h5 : 0.66666666668em , 
+	// h5 : 0.66666666668em ,
 	// h6 : 0.33333333333em ,
 
 	headline-padding : 15px,
@@ -32,24 +34,26 @@ $fonts : (
 
 
 $size : (
-	wrapper : 65%,
+	wrapper : 95%,
 );
 
 $palette : (
 	white : #fff,
 	white-alt : #fbfafa,
 	white-alt-2 : #f7fafb,
-	grey: #b5b9bb , 
-	bg : #f7fafb,
+	grey: #b5b9bb ,
+	bg : #fff,
 	bg-tp : rgba(255,255,255,0.1) ,
 	bg-border: rgba(255,255,255,0.4),
 	bg-alt : rgba(0,0,0 , 0.4) ,
-	fc :  #243238 ,
-	color1 :  rgb(110,182,197),
-	color1-tp :  rgba(110,182,197, 0.5),
+	fc :  #433d38 ,
+	color1 :  pink,
+	color1-tp :  rgba(192,146,216, 0.5),
 	color2 : #91c3d4,
+	color3 : rgb(145, 195, 212) ,
+	color4 : rgb(28, 133 , 188) ,
 	footer : #5d5f64,
-	footer2 : #595a5f, 
+	footer2 : #595a5f,
 
 );
 

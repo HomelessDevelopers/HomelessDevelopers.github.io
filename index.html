@@ -11,134 +11,125 @@
     <link rel="stylesheet" href="source/css/libs/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="source/css/libs/twentytwenty.css"/>
     <link rel="stylesheet" href="source/css/libs/slick.css"/>
+    <link rel="stylesheet" href="source/css/libs/ripple.css"/>
     <link rel="stylesheet" href="source/css/main.css"/>
     <title>Название</title>
   </head>
   <body>
-    <header id="header">
-      <div class="navigation">
-        <div class="top-nav">
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"> </div>
+    </div>
+    <!--include source/pug/layout/header.pug-->
+    <header>
+      <div class="desktop-nav">
+        <div class="upper-section">
           <div class="wrapper">
-            <div class="row container-fluid container-fluid container-fluid">
-              <div class="col-md-4 col-sm-12">
-                <div class="row container-fluid container-fluid container-fluid">
-                  <div class="col-md-6 col-sm-6">
-                    <div class="logo-container font-2">
-                      <h1>LadySlims</h1>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="contact-container"><a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%82%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+12,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cc0d7feaeb77:0x8939159f72ba5dc4?hl=ru&amp;sa=X&amp;ved=0ahUKEwirvbWooqjZAhXSL1AKHbcvCEYQ8gEIKTAA"><i class="fas fa-map-marker-alt"></i><span class="contact-text">КИТУ НАУ</span></a></div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="site-meta text-left"><i class="fas fa-map-marker-alt"></i><span>Адресс </span><span>|</span><span>Контакты</span></div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <div class="site-logo text-center">
+                    <h1>SiteLogo</h1>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-8 col-sm-12">
-                <div class="row container-fluid container-fluid container-fluid">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="contact-container"><a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%82%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+12,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cc0d7feaeb77:0x8939159f72ba5dc4?hl=ru&amp;sa=X&amp;ved=0ahUKEwirvbWooqjZAhXSL1AKHbcvCEYQ8gEIKTAA"><i class="fas fa-envelope"></i><span class="contact-text">kituNAU@gmail.com</span></a></div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <div class="contact-container"><a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%82%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+12,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cc0d7feaeb77:0x8939159f72ba5dc4?hl=ru&amp;sa=X&amp;ved=0ahUKEwirvbWooqjZAhXSL1AKHbcvCEYQ8gEIKTAA"><i class="fas fa-mobile"></i><span class="contact-text">+380955515561</span></a></div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <nav class="social-nav text-right">
-                      <ul>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      </ul>
-                    </nav>
-                  </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <div class="site-meta login text-right"><span><a href="#"> <i class="fas fa-sign-in-alt"></i></a></span></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="bottom-nav">
-          <div class="wrapper">
-            <div class="row container-fluid container-fluid container-fluid">
-              <div class="col-md-8">
+        <div class="lower-section">
+          <div class="small-wrapper">
+            <div class="container-fluid">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <nav class="main-nav">
-                  <ul>
-                    <li><a class="current" href="#">Начало</a></li>
-                    <li><a href="#">Продукт</a></li>
-                    <li><a href="#">Как он работает</a></li>
-                    <li><a href="#">Лента</a></li>
-                    <li><a href="#">До - после</a></li>
-                    <li><a href="#">Тарифы</a></li>
+                  <ul class="text-center">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a class="order" href="#">Заказать</a></li>
+                    <li class="search"><i class="fas fa-search"></i></li>
                   </ul>
                 </nav>
               </div>
-              <div class="col-md-4 text-right">
-                <button class="button button-white">Заказать сейчас</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-nav">
+        <div class="inner-nav">
+          <div class="wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6">
+                  <div class="site-logo">
+                    <h1> Sitename</h1>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mobile-nav-triger text-right"><i class="fas fa-bars"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-overlay animated">
+          <div class="content-center-container">
+            <div class="content-center">
+              <div class="wrapper">
+                <nav class="main-nav"> 
+                  <ul> 
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="mobile-nav-header">
-        <div class="wrapper">
-          <div class="site-logo float-left">
-            <h1>Sitename</h1>
-          </div>
-          <div class="mobile-navigation-triger-container">
-            <div class="mobile-navigation-triger" id="mobile-triger"><i class="fas fa-bars"></i></div>
-            <button class="button button-white float-right">Заказать сейчас</button>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-      </div>
-      <div class="mobile-navigation-container full-height">
-        <div class="mobile-nav">
-          <div class="upper-nav text-center">
-            <div class="site-logo-mobile text-center"></div>
-            <nav class="main-nav-mobile">
-              <ul>
-                <li><a href="#">Продукт</a></li>
-                <li><a href="#">Как он работает</a></li>
-                <li><a href="#">Лента</a></li>
-                <li><a href="#">До после</a></li>
-                <li><a href="#">Тарифы</a></li>
-              </ul>
-            </nav>
-            <button class="button button-white mobile">Заказать</button>
-          </div>
-          <div class="lower-nav"></div>
-        </div>
-      </div>
     </header>
-    <!--include source/pug/layout/header_2.pug -->
     <section class="hero-slider full-height no-padding">
       <div id="fit-slider-images"></div>
       <div class="inner-section">
         <div class="wrapper">
           <div class="fit-slider-wrapper">
             <div class="fit-slider">
-              <div class="fit-slide current">
-                <div class="image"><img src="images/pic01.jpg" alt=""/></div>
+              <div class="fit-slide">
+                <div class="image"><img src="images/slider-pic01.jpg" alt=""/></div>
                 <div class="content">
                   <h1 class="font-2">Создай свое <span class = "font-1">Идеальное</span> тело</h1>
-                  <p>Весна, время любви, радости, открытой одежды. А еще это предверие лета!!! </p>
                   <button class="button">кнопка</button>
                 </div>
               </div>
               <div class="fit-slide">
-                <div class="image"><img src="images/pic02.jpg" alt=""/></div>
+                <div class="image"><img src="images/slider-pic02.jpeg" alt=""/></div>
                 <div class="content">
                   <h1>Создай свое <span class = "font-1">Идеальное</span> тело</h1>
-                  <p>Текст</p>
                   <button class="button">кнопка</button>
                 </div>
               </div>
               <div class="fit-slide">
-                <div class="image"><img src="images/pic03.jpg" alt=""/></div>
+                <div class="image"><img src="images/slider-pic01.jpeg" alt=""/></div>
                 <div class="content">
                   <h1>Текст</h1>
-                  <p>Текст</p>
                   <button class="button">кнопка</button>
                 </div>
               </div>
+              <ul class="fit-slider-bullets">
+                <li class="bullet"><span class="number">01</span></li>
+                <li class="bullet"><span class="number">01</span></li>
+                <li class="bullet"><span class="number">01</span></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -148,7 +139,7 @@
       <div class="wrapper">
         <div class="features-container">
           <div class="row container-fluid container-fluid container-fluid">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item ripple-animation">
               <div class="feature-wrapper">
                 <div class="feature-image"><img src="images/feature-pic04.jpg" alt=""/></div>
                 <div class="feature-title font-2">
@@ -159,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item ripple-animation">
               <div class="feature-wrapper font-2">
                 <div class="feature-image"><img src="images/feature-pic02.jpg" alt=""/></div>
                 <div class="feature-title">
@@ -170,7 +161,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item ripple-animation">
               <div class="feature-wrapper font-2">
                 <div class="feature-image"><img src="images/feature-pic03.jpg" alt=""/></div>
                 <div class="feature-title">
@@ -181,7 +172,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 features-item ripple-animation">
               <div class="feature-wrapper font-2">
                 <div class="feature-image"><img src="images/feature-pic04.jpg" alt=""/></div>
                 <div class="feature-title">
@@ -207,9 +198,7 @@
                   <h1>Здоровое сердце</h1>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo dignissimos alias itaque culpa.</p>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo dignissi</p>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo dignissi</p>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo dignissimos alias itaque culpa.</p>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo dignissi</p>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo digniss							</p>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptates aliquid nihil, recusandae expedita aperiam dolore rerum id esse sapiente quidem animi, cupiditate veritatis at nemo dignissi</p><span></span>
                   <div class="how-it-works-marks">
                     <div class="row container-fluid container-fluid">
@@ -400,16 +389,20 @@
       </div>
     </section>
     <section class="portfolio">
-      <div class="inner-portfolio">
+      <div class="inner-section">
         <div class="wrapper">
           <div class="section-title text-center">
-            <h1>Мы гарантируем успех</h1>
-            <h3>Убедитесь сами</h3>
+            <h1>Посмотрите наши роботы</h1>
+            <h3>100% настоящие отзывы</h3>
           </div>
           <div class="portfolio-slider-wrapper">
             <div class="portfolio-slider">
-              <div class="portfolio-slide twentytwenty-container" id="portfolio-slide"><img src="https://as1.ftcdn.net/jpg/00/06/39/28/500_F_6392806_BHzu8fhUCPYkjPZDjxLLpxfduDiutIcu.jpg" alt=""/><img src="https://as2.ftcdn.net/jpg/00/06/49/93/500_F_6499399_rA5aw7KBntPRfzrc429bfaXcPqQl9IGq.jpg" alt=""/></div>
+              <div class="portfolio-slide"><img src="http://via.placeholder.com/550x350" alt="hello"/><img src="http://via.placeholder.com/550x350" alt="hello"/></div>
             </div>
+          </div>
+          <div class="section-title text-center">
+            <h3>Посмотрите наши роботы</h3>
+            <h4>100% настоящие отзывы</h4>
           </div>
         </div>
       </div>
@@ -489,67 +482,11 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="awwwards">
-        <div class="wrapper">
-          <div class="container-fluid">
-            <div class="row text-center">
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-                <div class="awwward"><img src="https://www.healthcare-informatics.com/sites/healthcare-informatics.com/files/styles/570x360/public/HCI_InnovatorAwardSeal_2014_1.png?itok=uzZvBH-R" alt=""/></div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-                <div class="awwward"><img src="https://www.healthcare-informatics.com/sites/healthcare-informatics.com/files/styles/570x360/public/HCI_InnovatorAwardSeal_2014_1.png?itok=uzZvBH-R" alt=""/></div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-                <div class="awwward"><img src="https://www.healthcare-informatics.com/sites/healthcare-informatics.com/files/styles/570x360/public/HCI_InnovatorAwardSeal_2014_1.png?itok=uzZvBH-R" alt=""/></div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-                <div class="awwward"><img src="https://www.healthcare-informatics.com/sites/healthcare-informatics.com/files/styles/570x360/public/HCI_InnovatorAwardSeal_2014_1.png?itok=uzZvBH-R" alt=""/></div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-                <div class="awwward"><img src="https://www.healthcare-informatics.com/sites/healthcare-informatics.com/files/styles/570x360/public/HCI_InnovatorAwardSeal_2014_1.png?itok=uzZvBH-R" alt=""/></div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-                <div class="awwward"><img src="https://www.healthcare-informatics.com/sites/healthcare-informatics.com/files/styles/570x360/public/HCI_InnovatorAwardSeal_2014_1.png?itok=uzZvBH-R" alt=""/></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lower-section">
-        <div class="contact-info">
-          <div class="wrapper">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><span><i class="fas fa-phone"> </i> +38232132415</span></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><span><i class="fas fa-phone"> </i> +38232132415</span></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><span><i class="fas fa-phone"> </i> +38232132415</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="document-container">
-          <div class="wrapper">
-            <div class="document text-center"><img src="http://ladyslim.com.ua/wp-content/uploads/2016/11/1414402907_sertifikat-yanhee-1.png" alt=""/></div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="wrapper">
-          <nav class="footer-social-nav">
-            <ul> 
-              <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </footer>
+    <!--include source/pug/layout/generic.pug-->
   </body>
   <script type="text/javascript" src="source/js/libs/jquery-3.2.1.min.js"></script>
   <!--script(type="text/javascript" , src = "source/js/libs/...")-->
+  <script type="text/javascript" src="source/js/libs/ripple.js">//combine later</script>
   <script type="text/javascript" src="source/js/libs/jquery.event.move.js"></script>
   <script type="text/javascript" src="source/js/libs/jquery.twentytwenty.js"></script>
   <script type="text/javascript" src="source/js/libs/slick.js"></script>

@@ -3,7 +3,7 @@
 
 
 
-//Adaptivity media 
+//Adaptivity media
 @mixin Phone {
 	@media (max-width: _BreakPoints(xs)){
 		@content;
@@ -39,7 +39,11 @@
 }
 
 
-
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
 
 
 
@@ -64,4 +68,11 @@
 	-moz-box-shadow:  $x  $y  $blur  $color;
 	-webkit-box-shadow: $x  $y  $blur  $color ;
 	box-shadow:  $x  $y  $blur  $color;
+}
+
+@mixin transition($x , $type , $duration){
+		-webkit-transition:$x , $type , $duration;
+		-moz-transition:$x , $type , $duration;
+		-o-transition:$x , $type , $duration;
+		transition: $x , $type , $duration;
 }

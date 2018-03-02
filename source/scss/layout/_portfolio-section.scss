@@ -1,0 +1,27 @@
+// Portfolio-slider BEGIN
+
+.portfolio {
+	.inner-section {
+		//Portoflio slider-wrapper BEGIN
+		.portfolio-slider-wrapper {
+			width: 60%;
+			margin: auto;
+			//height: 450px;
+			// Portfolio-slider BEGIN
+			.portfolio-slider {
+				// Portfolio-slide BEGIN
+				.portfolio-slide {
+					height: 450px !important;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				// Portfolio-slide EMD
+			}
+			// Portfolio-slider END
+		}
+		// Portfolio-slider-wrapper END
+	}
+}
+// Portfolio-slider END

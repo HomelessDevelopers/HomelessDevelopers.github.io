@@ -1,11 +1,15 @@
-// DEFAULT 
+// DEFAULT
 
 .button{
 	border: 1px solid _palette(fc);
 	padding: 8px 12px 8px 12px;
 	border-radius: 5px;
 	background-color: transparent;
-	font-family: _fonts(font1);
+	cursor: pointer;
+	font-family: _fonts(font7);
+		&:focus {
+	  outline: none;
+	}
 }
 
 .button.button-white{
@@ -27,4 +31,3 @@
 		color: _palette(color1)
 	}
 }
-

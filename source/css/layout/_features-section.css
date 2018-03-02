@@ -1,0 +1,38 @@
+.features-section {
+  height: auto;
+  width: 100%;
+  background-image: url(https://as2.ftcdn.net/jpg/01/83/66/03/500_F_183660336_TFOyNnTeKdtXwbduz4sIyhjF3ZMsdfLx.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .features-section:before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .features-section .features-container {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    top: -140px; }
+    .features-section .features-container .features-item {
+      background-color: _palette(white);
+      padding: 55px 20px 55px 20px; }
+      .features-section .features-container .features-item:nth-child(even) {
+        background-color: _palette(white-alt); }
+      .features-section .features-container .features-item .feature-image {
+        margin-bottom: 25px; }
+        .features-section .features-container .features-item .feature-image img {
+          border-radius: 50%;
+          width: 65%; }
+      .features-section .features-container .features-item .feature-title {
+        font-weight: 100;
+        margin-bottom: 25px; }
+      .features-section .features-container .features-item .feature-text {
+        font-weight: 100;
+        font-size: 0.95em;
+        line-height: 22px; }

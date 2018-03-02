@@ -1,0 +1,145 @@
+header{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-color: _palette(bg-tp);
+
+  // Upper Section BEGIN
+   .upper-section{
+     padding-top: 0.8em;
+     .site-logo{
+       margin-top: -10px;
+       h1{
+         margin: 0px;
+         padding: 0px;
+       }
+     }
+
+     .site-meta{
+       font-size: 0.6em;
+       margin-top: 8px;
+       i{
+         padding-right: 8px;
+       }
+       span{
+         padding: 0px 5px;
+         color: _palette(fcg);
+       }
+      }
+      .site-meta.login{
+        i{
+          padding: 0px;
+          font-size: 1.5em;
+        }
+     }
+     .mobile-triger{
+       display: none;
+     }
+   }
+  // Uppper Section END
+
+
+  // Lower Section BEGIN
+
+  .lower-section{
+    padding: 10px 0px ;
+    min-height: 1px;
+    width: 100%;
+    ul{
+      margin: 0px;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        //padding: 0px 10px;
+        padding: 0em 0.2em;
+
+        a{
+          color:inherit;
+          padding: 0.7em;
+          &:hover{
+            text-decoration: none;
+            border-bottom: 2px solid pink;
+          }
+        }
+        a.current{
+          border-bottom: 2px solid pink;
+        }
+        a.order{
+          color: blue;
+          //text-transform: uppercase;
+        }
+      }
+      li.search{
+        cursor: pointer;
+        display: none;
+      }
+    }
+  }
+  // Lower Section END
+}
+.mobile-nav{
+  display: none;
+  width: 100%;
+  height: auto;
+  .inner-nav{
+    padding: 10px 0px;
+    min-height: 1px;
+    width: 85%;
+    margin: auto;
+    .mobile-nav-triger{
+      font-size: 2.5em;
+      cursor: pointer;
+    }
+  }
+}
+.mobile-nav-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0 , 0.75);
+  position: fixed;
+  z-index: 900;
+  top:0px;
+  display: none;
+  nav.main-nav{position: relative; z-index: 999;}
+  ul{
+    margin: auto;
+    min-width: 1px;
+    width: 35%;
+    padding: 0px;
+    li{
+      list-style-type: none;
+      width: 100%;
+      border: 2px solid #fff;
+      text-align: center;
+      padding: 15px 0px;
+      margin: 10px 0px;
+      cursor: pointer;
+      a{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+      }
+      &:hover{
+
+      }
+    }
+  }
+
+
+}
+@include Phone {
+    .desktop-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: block;
+    }
+}
+@include SmallTablet {
+    .desktop-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: block;
+    }
+}

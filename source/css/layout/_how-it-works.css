@@ -1,10 +1,2 @@
-.how-it-works .row {
-  height: 100%;
-  width: 100%; }
-
-.how-it-works .image-bg {
-  background-image: url("../../images/bg-pic01.jpg");
-  background-color: red; }
-
-body {
-  background-color: red !important; }
+.how-it-works {
+  display: none; }

@@ -11,12 +11,17 @@ html(lang="russian")
 		link(rel="stylesheet", href="source/css/libs/bootstrap-grid.min.css")
 		link(rel="stylesheet", href="source/css/libs/twentytwenty.css")
 		link(rel="stylesheet", href="source/css/libs/slick.css")
+		link(rel="stylesheet", href="source/css/libs/ripple.css")
 		link(rel="stylesheet", href="source/css/main.css")
 		title Название
 	body
+	
+		//---------- PRELOADER -----------//
+		include source/pug/layout/preloader.pug
 		//---------- Header layout -----------//
-		include source/pug/layout/header.pug
-		//include source/pug/layout/header_2.pug 
+		//include source/pug/layout/header.pug
+		//- include source/pug/layout/header_2.pug 
+		include source/pug/layout/header-3.pug
 
 		//---------- Slider Layout -----------//
 		include source/pug/layout/fit-slider.pug
@@ -48,10 +53,12 @@ html(lang="russian")
 
 		//- //---------- Footer layout -----------//
 		include source/pug/layout/footer.pug
+		//include source/pug/layout/generic.pug
 
 	
 	script(type="text/javascript" , src = "source/js/libs/jquery-3.2.1.min.js")
 	//script(type="text/javascript" , src = "source/js/libs/...")
+	script(type="text/javascript" , src = "source/js/libs/ripple.js") //combine later
 	script(type="text/javascript" , src = "source/js/libs/jquery.event.move.js")
 	script(type="text/javascript" , src = "source/js/libs/jquery.twentytwenty.js")
 	script(type="text/javascript" , src = "source/js/libs/slick.js")

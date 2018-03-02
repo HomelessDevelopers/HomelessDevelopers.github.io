@@ -1,0 +1,60 @@
+header
+  .desktop-nav
+    .upper-section
+      .wrapper
+        .container-fluid
+          .row
+            .col-xs-12.col-sm-12.col-md-4.col-lg-4
+              .site-meta.text-left
+                i.fas.fa-map-marker-alt
+                span Адресс 
+                span |
+                span Контакты
+            .col-xs-6.col-sm-6.col-md-4.col-lg-4
+              .site-logo.text-center
+                h1 SiteLogo
+            .col-xs-6.col-sm-6.col-md-4.col-lg-4
+              .site-meta.login.text-right
+                span
+                  a(href="#") 
+                    i.fas.fa-sign-in-alt
+        
+                  
+                
+                  
+          
+    .lower-section
+      .small-wrapper
+        .container-fluid
+          .col-xs-12.col-sm-12.col-md-12.col-lg-12
+            nav.main-nav
+              ul.text-center
+                -for(var i = 0; i < 6 ; i++)
+                  li
+                    a(href="#") Главная
+                li
+                  a(href="#").order Заказать
+                li.search
+                  i.fas.fa-search
+  .mobile-nav
+    .inner-nav
+      .wrapper
+        .container-fluid
+          .row
+            .col-6
+              .site-logo
+                h1  Sitename
+            .col-6
+              .mobile-nav-triger.text-right
+                i.fas.fa-bars
+    .mobile-nav-overlay.animated
+      .content-center-container
+        .content-center
+          .wrapper
+            nav.main-nav 
+              ul  
+                -for(var i = 0; i < 3; i++)
+                  li
+                    a(href="#") Главная
+    
+          

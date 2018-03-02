@@ -1,0 +1,37 @@
+.social-icons {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.social-icon {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
+  .social-icon svg {
+    overflow: visible !important; }
+  .social-icon .si-splash,
+  .social-icon .si-grid {
+    display: none;
+    visibility: hidden; }
+  .social-icon .si-icon {
+    -webkit-transform-origin: "center center";
+    -ms-transform-origin: "center center";
+    transform-origin: "center center"; }

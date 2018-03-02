@@ -1,27 +1,31 @@
 @import "libs/_vars.scss";
 @import "libs/_functions.scss";
 @import "libs/_mixins.scss";
-@import "layout/_header.scss";
-//@import "layout/_header_2.scss";
+// @import "layout/_header.scss";
+// @import "layout/_header_2.scss";
+@import "layout/_header-3.scss";
 
 @import "layout/_fit-slider.scss";
 @import "layout/_how-it-works.scss";
 @import "layout/_features-section.scss";
 @import "layout/_feed.scss";
 @import "layout/_product-features.scss";
-@import "layout/_portoflio-section.scss";
+@import "layout/_portfolio-section.scss";
 @import "layout/_feedback.scss";
 @import "layout/_pricing.scss";
 @import "layout/_contact-form.scss";
 @import "layout/_footer.scss";
+@import "layout/_generic.scss";
+@import "layout/_preloader.scss";
 @import "components/_fonts.scss";
 @import "components/_buttons.scss";
+@import "components/_social-icons.scss";
 
 body{
 	background-color: _palette(bg);
 	font-family: _fonts(font3) , sans-serif;
 	color: _palette(fc);
-	font-size: 14px;
+	font-size: _fonts(basefont);
 }
 
 a{
@@ -51,7 +55,7 @@ section{
 .text-left {text-align: left;}
 
 .float-left{ float: left}
-.float-right {float: right} 
+.float-right {float: right}
 
 .no-padding{ padding: 0px !important}
 
@@ -62,6 +66,14 @@ section{
 	height: auto;
 	margin: auto;
 }
+.small-wrapper{
+	width: 80%;
+	margin: auto;
+	height: auto;
+	min-height: 1px;
+	max-height: 1200px;
+}
+
 
 .color-1{ color : _palette(color1)}
 .color-2{ color : _palette(color1)}
@@ -73,55 +85,73 @@ section{
 
 /*ADAPTIVITY STYLES*/
 
-
+@media screen and (max-height:480px){
+	.features-section{
+		.features-container{
+			top:0px !important;
+		}
+	}
+}
 @include Phone {
+	body{
+		font-size: 0.9em;
+	}
 	*{
 		background-position: center;
 	}
 	.wrapper{
-		width: 100%;
+		width: 95%;
 		margin: auto;
-		
 	}
-
-	.container-fluid{
-		margin: 0px;
+	.small-wrapper{
+		width: 90%;
 	}
 
 	.portfolio-slider{
 		height: 200px !important;
 		overflow: hidden;
+	}
+	.features-section{
+		.features-container{
+			top: 0px
+		}
 	}
 }
 @include SmallTablet {
+	body{
+		font-size: 11px;
+	}
 	.wrapper{
-		width: 100%;
+		width: 95%;
 		margin: auto;
-		
+
 	}
 	.portfolio-slider{
 		height: 200px !important;
 		overflow: hidden;
 	}
 
+
 }
-
-
-
-
-//REMOVE LATER
-
-
-
-
-
-
-
-
-
-
+@include Tablet {
+	body{
+		font-size: 13px;
+	}
+}
+@include Desktop{
+	body{
+		font-size: 16px;
+	}
+}
+.container-fluid{
+	padding: 0px;
+	margin: 0px;
+}
 
 .document-overlay{
 	width: 100%;
 	position: absolute;
 }
+.section-title{padding: 20px 0px;}
+.content-center-container{width: 100%;height: 100%; display: table;}
+.content-center{width: 100%;height: 100%; display: table-cell; vertical-align: middle;}

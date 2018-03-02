@@ -1,0 +1,25 @@
+.generic{
+  background: #eee;
+  background: radial-gradient(#ddd, #ccc);
+  padding: 40px 0px;
+
+  .button-container{
+    width: 100%;
+    padding: 40px 0px;
+    button{
+      padding: 6px 10px;
+       border: 0 none;
+       border-radius: 0.25rem;
+       font-weight: bold;
+       font-size: 16px;
+       cursor: pointer;
+       box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+       color: #eee;
+       margin: 0 0.5rem;
+       transition: box-shadow 0.3s linear;
+       &:hover{
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 4px 12px ;
+      }
+    }
+  }
+}
